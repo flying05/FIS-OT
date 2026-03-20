@@ -1,11 +1,11 @@
 # FIS-OT: Feature-Induced Optimal Transport for Unsupervised Action Segmentation
 
-This repo contains the implementation of **FIS-OT** (Feature-Induced Optimal Transport), a method for unsupervised action segmentation. It builds upon the ASOT (Action Segmentation Optimal Transport) framework and introduces a **Feature Enhanced Graph (FEG)** module to enhance feature learning and segmentation performance.
+This repo contains the implementation of **FIS-OT** (Feature-Induced Optimal Transport), a method for unsupervised action segmentation. It builds upon the ASOT (Action Segmentation Optimal Transport) framework and introduces a **Feature Enhanced Generater (FEG)** module to enhance feature learning and segmentation performance.
 
 ## Overview
-
+![framework](fisot.png)
 FIS-OT improves unsupervised action segmentation by incorporating:
-1.  **Feature Enhanced Graph (FEG)**: A module that leverages both temporal structure and semantic similarity to refine feature representations.
+1.  **Feature Enhanced Generater (FEG)**: A module that leverages both temporal structure and semantic similarity to refine feature representations.
 2.  **Feature-Induced Optimal Transport**: Utilizing enhanced features to guide the optimal transport process for better pseudo-label generation.
 
 ## Dependencies
@@ -69,7 +69,7 @@ Run the `run_fseval.sh` script for the FSeval experiment.
 ```bash
 ./run_fseval.sh
 ```
-
+![visualization](seg(1).png)
 ## Key Arguments
 The main training script `src/train_feg_asot.py` accepts several arguments:
 - `-p`, `--path`: Path to the data directory.
