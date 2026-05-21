@@ -79,7 +79,7 @@ The main training script `src/train_feg_asot.py` accepts several arguments:
 - `--feg-h`: Bandwidth parameter for the semantic kernel in FEG.
 - `--feg-warmup`: Number of warmup epochs for FEG.
 - `-km`, `--use-kmeans-init`: Use KMeans for initialization.
-
+**<span style="color:red">Espeicially, the wight of Cv_feat can be setted in line 161 of asot.py.</span>**
 ## Monitoring
 Training logs and metrics are logged to [WandB](https://wandb.ai/). Ensure you have set up your WandB account and logged in.
 Local logs for Breakfast dataset are saved in the `bf_logs` directory.
